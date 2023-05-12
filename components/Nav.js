@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Nav({ active, handleClick }) {
@@ -13,10 +14,18 @@ export default function Nav({ active, handleClick }) {
     >
       {/* logo */}
       <div className="w-full flex justify-between">
-        <img src="/landa.svg" alt="" className="w-16 h-8 mx-2.5" />
-        <img
+        <Image
+          src="/landa.svg"
+          width={35}
+          height={35}
+          alt=""
+          className="w-16 h-8 mx-2.5"
+        />
+        <Image
           src="/cross.svg"
           alt=""
+          width={35}
+          height={35}
           onClick={handleClick}
           className="md:hidden"
         />
