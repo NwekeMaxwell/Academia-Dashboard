@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import PercentBar from "./PercentBar";
 
 export default function ListComponent({
   image,
@@ -7,6 +8,8 @@ export default function ListComponent({
   status,
   bgcolor,
   color,
+  padding,
+  percentage,
 }) {
   return (
     <div className="mt-12 p-5 h-auto w-8/12  listbg listbg2 flex items-center justify-between">
@@ -19,11 +22,15 @@ export default function ListComponent({
         <div className="w-full">
           <div className="text-blue-700">{title}</div>
           <div className="font-bold">{subtitle}</div>
+          {percentage ? <PercentBar percentage={percentage} /> : ""}
         </div>
       </div>
       {/* status */}
       <div className="flex gap-1">
-        <span className={`${bgcolor} ${color} stat h-min text-xs font-bold`}>
+        <span
+          className={`${bgcolor} ${color} ${padding} 
+          h-min text-xs font-bold`}
+        >
           {status}
         </span>
         {status === "ongoing" ? (

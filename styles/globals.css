@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* navbar custom colors */
 .navbg {
   background-color: #f6f9fd;
 }
@@ -11,14 +12,12 @@
 .navbg3 {
   background-color: #0d0630;
 }
+/* lists custom style */
 .listbg {
   background-color: #fafafa;
 }
 .listbg2 {
   border: 1px solid #e6e6e6;
-}
-input:focus {
-  outline: none;
 }
 .orange1 {
   color: #ffa620;
@@ -32,7 +31,7 @@ input:focus {
 .green2 {
   background-color: #c8eed3;
 }
-.stat {
-  padding: 2px 8px;
-  border-radius: 10px;
+/* input box format  */
+input:focus {
+  outline: none;
 }
