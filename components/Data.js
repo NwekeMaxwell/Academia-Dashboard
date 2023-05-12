@@ -34,6 +34,7 @@ export const ProgramData = [
 export const CoursesData = [
   {
     id: 1,
+    name: "course",
     image: "/avatar.jpg",
     title: "CIPD",
     subtitle: "C++ For Dummies",
@@ -42,9 +43,11 @@ export const CoursesData = [
     color: "text-white",
     padding: "py-4 px-6 rounded-sm",
     percentage: 80,
+    button: "w-full text-center",
   },
   {
     id: 2,
+    name: "course",
     image: "/avatar.jpg",
     title: "Yorkshire",
     subtitle: "Python for Data Analysis",
@@ -53,9 +56,11 @@ export const CoursesData = [
     color: "text-white",
     padding: "py-4 px-6 rounded-sm",
     percentage: 92,
+    button: "w-full text-center",
   },
   {
     id: 3,
+    name: "course",
     image: "/avatar.jpg",
     title: "Google",
     subtitle: "UX Fundamentals",
