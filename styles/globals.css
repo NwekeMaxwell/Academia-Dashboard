@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbg {
+  background-color: #f6f9fd;
+}
+.navbg2 {
+  background-color: #dde7f8;
+}
+.navbg3 {
+  background-color: #0d0630;
+}
+.listbg {
+  background-color: #fafafa;
+}
+.listbg2 {
+  border: 1px solid #e6e6e6;
+}
+input:focus {
+  outline: none;
+}
+.orange1 {
+  color: #ffa620;
+}
+.orange2 {
+  background-color: #ffe6c3;
+}
+.green1 {
+  color: #24753a;
+}
+.green2 {
+  background-color: #c8eed3;
+}
+.stat {
+  padding: 2px 8px;
+  border-radius: 10px;
+}
