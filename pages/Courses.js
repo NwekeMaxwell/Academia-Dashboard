@@ -4,7 +4,7 @@ import UIButtons from "@/components/UIButtons";
 import { CoursesData } from "@/components/Data";
 import ListComponent from "@/components/ListComponent";
 
-export default function () {
+export default function Courses() {
   return (
     <Layout>
       <UIButtons />
