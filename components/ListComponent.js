@@ -28,7 +28,7 @@ export default function ListComponent({
             width={35}
             height={35}
             alt=""
-            className="h-full w-full"
+            className="h-full w-full object-cover"
           />
         </div>
         {/* descriptiion */}

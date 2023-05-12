@@ -19,7 +19,7 @@ export default function Nav({ active, handleClick }) {
           width={35}
           height={35}
           alt=""
-          className="w-16 h-8 mx-2.5"
+          className="w-16 h-8 mx-2.5 object-cover"
         />
         <Image
           src="/cross.svg"
@@ -27,7 +27,7 @@ export default function Nav({ active, handleClick }) {
           width={35}
           height={35}
           onClick={handleClick}
-          className="md:hidden"
+          className="md:hidden object-cover"
         />
       </div>
       {/* nav */}

@@ -13,7 +13,7 @@ export default function Header({ handleClick }) {
             src={"/menu.svg"}
             width={24}
             height={24}
-            className="w-6 h-6"
+            className="w-6 h-6 object-cover"
             alt=""
           />
         </div>
@@ -27,7 +27,7 @@ export default function Header({ handleClick }) {
             width={35}
             height={35}
             alt=""
-            className="m-auto md:hidden"
+            className="m-auto md:hidden object-cover"
           />
         </span>
         <Icon
