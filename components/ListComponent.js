@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import PercentBar from "./PercentBar";
+import Image from "next/image";
 
 export default function ListComponent({
   image,
@@ -22,7 +23,13 @@ export default function ListComponent({
       >
         {/* image */}
         <div className="w-16 h-16 object-cover">
-          <img src={image} alt="" className="h-full w-full" />
+          <Image
+            src={image}
+            width={35}
+            height={35}
+            alt=""
+            className="h-full w-full"
+          />
         </div>
         {/* descriptiion */}
         <div className="w-full">
