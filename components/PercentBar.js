@@ -4,7 +4,7 @@ export default function PercentBar({ percentage }) {
   const progressBarStyle = `bg-blue-500 ${innerBarStyle}`;
 
   return (
-    <div className="flex w-full gap-4">
+    <div className="flex w-full gap-4 text-end h-6 self-center">
       <div className="w-1/2 flex my-auto">
         <div className={outerBarStyle}>
           <div
@@ -13,7 +13,9 @@ export default function PercentBar({ percentage }) {
           ></div>
         </div>
       </div>
-      <div className="w-full text-xs font-medium">{percentage}% Completed</div>
+      <div className="w-max md:text-xs text-ss font-medium">
+        {percentage}% Completed
+      </div>
     </div>
   );
 }

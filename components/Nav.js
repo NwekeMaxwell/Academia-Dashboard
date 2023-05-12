@@ -1,18 +1,28 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 
-export default function () {
+export default function Nav({ active, handleClick }) {
   const inactiveLink = "flex gap-4 p-2 mb-2 items-center ";
   const activeLink = inactiveLink + " text-lg bg-blue-200 text-blue-600";
 
   return (
-    <aside className="p-5 h-full navbg w-72 flex flex-col gap-16">
+    <aside
+      className={`${
+        active ? "block absolute h-full" : "hidden"
+      } p-5 navbg w-72 md:block flex flex-col `}
+    >
       {/* logo */}
-      <div className="w-full">
+      <div className="w-full flex justify-between">
         <img src="/landa.svg" alt="" className="w-16 h-8 mx-2.5" />
+        <img
+          src="/cross.svg"
+          alt=""
+          onClick={handleClick}
+          className="md:hidden"
+        />
       </div>
       {/* nav */}
-      <nav className="flex flex-col h-screen justify-between">
+      <nav className={`flex mt-16 flex-col h-full justify-between`}>
         <div>
           <Link href={"/"} className={inactiveLink}>
             <Icon icon="tabler:layout-dashboard" />
