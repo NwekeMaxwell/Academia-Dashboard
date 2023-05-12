@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 
 export default function Layout({ children }) {
   return (
-    <div className="w-full h-screen flex">
+    <div className="w-full h-full flex">
       <Nav />
       <div className="w-full">
         <Header />

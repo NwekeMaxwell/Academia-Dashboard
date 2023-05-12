@@ -12,7 +12,7 @@ export default function () {
         <img src="/landa.svg" alt="" className="w-16 h-8 mx-2.5" />
       </div>
       {/* nav */}
-      <nav className="flex flex-col h-full justify-between">
+      <nav className="flex flex-col h-screen justify-between">
         <div>
           <Link href={"/"} className={inactiveLink}>
             <Icon icon="tabler:layout-dashboard" />
@@ -45,9 +45,3 @@ export default function () {
     </aside>
   );
 }
-/*
-<div className="flex flex-col justify-between">
-
-
-</div>
-*/

@@ -5,7 +5,6 @@ import UIButtons from "@/components/UIButtons";
 import { ProgramData } from "@/components/Data";
 
 export default function Home() {
-  console.log(ProgramData);
   return (
     <Layout>
       <UIButtons />
