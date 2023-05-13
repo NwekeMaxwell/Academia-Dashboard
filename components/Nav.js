@@ -1,10 +1,13 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Nav({ active, handleClick }) {
   const inactiveLink = "flex gap-4 p-2 mb-2 items-center ";
   const activeLink = inactiveLink + " text-lg bg-blue-200 text-blue-600";
+  const router = useRouter();
+  const { pathname } = router;
 
   return (
     <aside
@@ -31,13 +34,19 @@ export default function Nav({ active, handleClick }) {
         />
       </div>
       {/* nav */}
-      <nav className={`flex mt-16 flex-col h-full justify-between`}>
+      <nav className={`flex mt-16 flex-col h-screen h-full justify-between`}>
         <div>
-          <Link href={"/"} className={inactiveLink}>
+          <Link
+            href={"/dashboard"}
+            className={pathname === "/dashboard" ? activeLink : inactiveLink}
+          >
             <Icon icon="tabler:layout-dashboard" />
             Dashboard
           </Link>
-          <Link href={"/"} className={activeLink}>
+          <Link
+            href={"/"}
+            className={pathname === "/" ? activeLink : inactiveLink}
+          >
             <Icon icon="material-symbols:menu-book-outline-sharp" />
             Learning
           </Link>
