@@ -1,9 +1,18 @@
 import { Icon } from "@iconify/react";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
-export default function SearchBar() {
+export default function SearchBar({ handleSearch }) {
+  //for input placeholder
   const router = useRouter();
   const { pathname } = router;
+  // search functionality
+  const [searchField, setSearchField] = useState("");
+  const handleChange = (e) => {
+    setSearchField(e.target.value);
+    handleSearch(e.target.value);
+  };
+
   return (
     <div className="flex gap-4 md:gap-6 mt-10 md:mt-14">
       <div className="flex w-full md:w-1/2">
@@ -14,6 +23,8 @@ export default function SearchBar() {
           <input
             type="text"
             className="w-full py-2 px-3"
+            value={searchField}
+            onChange={handleChange}
             placeholder={`Search for ${
               pathname === "/" ? "Programs..." : "Short Course..."
             }`}
