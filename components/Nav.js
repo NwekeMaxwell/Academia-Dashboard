@@ -45,7 +45,11 @@ export default function Nav({ active, handleClick }) {
           </Link>
           <Link
             href={"/"}
-            className={pathname === "/" ? activeLink : inactiveLink}
+            className={
+              pathname === "/" || pathname === "/Courses"
+                ? activeLink
+                : inactiveLink
+            }
           >
             <Icon icon="material-symbols:menu-book-outline-sharp" />
             Learning
