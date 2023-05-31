@@ -18,7 +18,7 @@ export default function Nav({ active, handleClick }) {
       {/* logo */}
       <div className="w-full flex justify-between">
         <Image
-          src="/landa.svg"
+          src="/logoAcademia.jpeg"
           width={35}
           height={35}
           alt=""

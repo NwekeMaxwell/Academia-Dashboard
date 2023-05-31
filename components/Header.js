@@ -23,11 +23,11 @@ export default function Header({ handleClick }) {
         <span className="navbg2 mr-2 md:mr-0 grid md:border-blue-400 border text-blue-600 rounded-full w-10 h-10">
           <Icon icon="uil:image-upload" className="m-auto hidden md:block" />
           <Image
-            src={"/avatar2.jpg"}
+            src={"/user.jpg"}
             width={35}
             height={35}
             alt=""
-            className="m-auto md:hidden object-cover"
+            className="m-auto md:hidden object-cover rounded-full"
           />
         </span>
         <Icon
